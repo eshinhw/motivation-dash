@@ -1,0 +1,92 @@
+body {
+  min-height: 100%;
+  margin: 25px 25px;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 120px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+main {
+  min-height: 100%; /* Set to minimum height so overflow doesn't get hidden */
+  min-width: 100%;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#clock {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+#greeting {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+span {
+  color: white;
+}
+
+.header-icon {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.footer-icon {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+#search-icon {
+  margin-left: 15px;
+}
