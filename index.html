@@ -6,29 +6,86 @@
     <title>Motivation Dash</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Space Grotesk"
+    />
   </head>
   <body>
-    <header class="header">
-      <div>Link</div>
-      <div>Weather</div>
-    </header>
-    <div class="main">
-      <div>
-        <h2 id="clock"></h2>
-        <h1 id="greeting" class="hidden"></h1>
+    <header>
+      <div class="header-icons">
+        <img
+          src="images/icons/external-link.png"
+          class="header-icon"
+          id="link-icon"
+        />
+        <img
+          src="images/icons/search.png"
+          class="header-icon"
+          id="search-icon"
+        />
+        <div class="hidden" id="search-bar">
+          <input type="search" id="search-input" />
+        </div>
       </div>
+      <div id="weather">
+        <div class="weather-flex">
+          <span id="weather-icon"></span><span id="temperature"></span>
+        </div>
+        <span id="city"></span>
+      </div>
+    </header>
+    <div class="modal hidden" id="link-modal" style="color: white">
+      <div class="modal-content">
+        <ul>
+          <li>MotivationHub</li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
 
-      <form class="hidden">
+    <main>
+      <!-- clock -->
+      <h1 id="clock"></h1>
+
+      <!-- greeting -->
+      <form id="greeting-form" class="hidden">
         <label>What is your name?</label>
         <input required maxlength="15" type="text" id="name_input" />
       </form>
-      <h1>What is your main focus today?</h1>
-    </div>
-    <footer class="footer">
-      <div>Setting</div>
-      <div>Todo</div>
+      <h2 id="greeting" class="hidden"></h2>
+
+      <!-- quote -->
+
+      <span id="quote" class="quote hidden"></span>
+
+      <!-- todo -->
+      <form id="todo-form" class="hidden">
+        <label>What is your main focus today?</label>
+        <input type="text" required />
+      </form>
+      <!-- main focus -->
+      <div id="main-focus" class="hidden">
+        <h3>TODAY</h3>
+        <ul id="todo-list"></ul>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <img
+        src="images/icons/settings.png"
+        class="footer-icon"
+        id="settings-icon"
+      />
     </footer>
-    <script src="js/greetings.js"></script>
+
     <script src="js/clock.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/header-link.js"></script>
   </body>
 </html>
