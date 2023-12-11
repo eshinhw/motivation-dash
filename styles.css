@@ -92,6 +92,8 @@ span {
 header {
   display: flex;
   justify-content: space-between;
+  height: 100px;
+  align-items: center;
 }
 
 footer {
@@ -191,12 +193,10 @@ form {
   z-index: 1;
   left: 0;
   top: 50;
-  overflow: auto;
-  background: transparent;
+  background-color: #404040;
   margin: 15px 15px;
   border-radius: 5px;
   padding: 10px;
-  border: 1px solid white;
 }
 
 #search-input {
