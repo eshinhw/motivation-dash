@@ -1,4 +1,4 @@
-const loginForm = document.querySelector("form");
+const loginForm = document.querySelector("#greeting-form");
 const loginInput = document.querySelector("#name_input");
 const greeting = document.querySelector("#greeting");
 const savedUsername = localStorage.getItem("username");
@@ -63,6 +63,7 @@ function paintToDo(newToDo) {
   completeBtn = document.createElement("button");
   completeBtn.innerHTML = "✅";
   completeBtn.classList.add("hidden");
+  completeBtn.addEventListener("click", handleCompleteToDo);
   deleteBtn.innerHTML = "❌";
   deleteBtn.classList.add("hidden");
   deleteBtn.addEventListener("click", handleDeleteTodo);
@@ -80,6 +81,17 @@ function handleMouseOver(event) {
 function handleMouseLeave(event) {
   completeBtn.classList.add("hidden");
   deleteBtn.classList.add("hidden");
+}
+
+function handleCompleteToDo(event) {
+  // const li = event.target.siblings;
+  // li.classList.add("completed");
+  const span = event.target.nextSibling;
+  if (span.classList.contains("completed")) {
+    span.classList.remove("completed");
+  } else {
+    span.classList.add("completed");
+  }
 }
 
 function handleDeleteTodo(event) {
@@ -122,12 +134,10 @@ if (savedUsername === null) {
   }
 }
 
-if (todosFromStorage.length > 0) {
+if (todosFromStorage) {
   toDoList.classList.remove("hidden");
   loadToDo();
-}
-
-if (todosFromStorage.length === 0) {
+} else {
   toDoForm.classList.remove("hidden");
   mainFocus.classList.add("hidden");
 }
