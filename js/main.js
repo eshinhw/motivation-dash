@@ -129,17 +129,19 @@ if (savedUsername === null) {
   quote.classList.remove("hidden");
   // toDoForm.classList.remove("hidden");
   // console.log(todosFromStorage);
-  if (todosFromStorage) {
+  console.log(todosFromStorage);
+  console.log(todosFromStorage == []);
+  if (todosFromStorage.length == 0) {
+    toDoForm.classList.remove("hidden");
+    // mainFocus.classList.remove("hidden");
+    // toDoList.classList.remove("hidden");
+    // loadToDo();
+  } else {
+    // toDoForm.classList.remove("hidden");
+    loadToDo();
     mainFocus.classList.remove("hidden");
+    toDoList.classList.remove("hidden");
   }
-}
-
-if (todosFromStorage) {
-  toDoList.classList.remove("hidden");
-  loadToDo();
-} else {
-  toDoForm.classList.remove("hidden");
-  mainFocus.classList.add("hidden");
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
