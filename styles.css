@@ -233,3 +233,7 @@ form {
   width: 100%;
   margin: 0;
 }
+
+.completed {
+  text-decoration: line-through !important;
+}
