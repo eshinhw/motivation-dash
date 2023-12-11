@@ -26,7 +26,7 @@ function onFormSubmit(event) {
 function paintGreeting(username) {
   const time = new Date();
   const hour = time.getHours();
-  if (hour >= 5 && hour <= 10) {
+  if (hour >= 3 && hour <= 10) {
     greeting.innerText = `Good morning, ${username}!`;
   } else if (hour > 11 && hour <= 17) {
     greeting.innerText = `Good afternoon, ${username}!`;
