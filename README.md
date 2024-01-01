@@ -12,7 +12,7 @@
 
 - Develop a cloned version of Momentum App using HTML, CSS and Vanilla JavaScript.
 - Practice how to create a foundational structure in HTML, add styles in CSS and UI interactivity in JavaScript.
-- Deploy the live demo on netlify app.
+- Deploy the live demo on netlify app for public access.
 
 ## Demo Screenshot
 
