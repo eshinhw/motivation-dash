@@ -21,3 +21,6 @@
   <img width="1200" height="600" alt="" src="https://github.com/eshinhw/motivation-dash/assets/41933169/2b0c25b8-a8b5-4810-8100-119b2417aade">
 
 </div>
+
+## Screenshot
+
