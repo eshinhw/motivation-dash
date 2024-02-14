@@ -1,4 +1,4 @@
-# Motivation Dash
+# Motivation Chrome Dash App
 
 <div align="center">
 
